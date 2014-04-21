@@ -1,15 +1,18 @@
 <?php
-
-// Name
-$name ="$name"; 
-
-// Email
-$email="$email";
-
-// Message
-$text="$text"; 
-
-// Enter your email address
-$to ='me@mgshuheb.com';
-$send_contact=mail($to,$name,$email,$text);
+ 
+    $to = "me@mgshuheb.com"; 
+    $from = $_REQUEST['email']; 
+    $name = $_REQUEST['name']; 
+    $headers = "From: $from"; 
+    $subject = "A new message!"; 
+ 
+    $fields = array(); 
+    $fields{"name"} = "name"; 
+    $fields{"email"} = "email";  
+    $fields{"message"} = "text";
+ 
+    $body = "Here is what was sent:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+ 
+    $send = mail($to, $subject, $body, $headers);
+ 
 ?>
