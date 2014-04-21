@@ -9,7 +9,7 @@
     $fields = array(); 
     $fields{"name"} = "name"; 
     $fields{"email"} = "email";  
-    $fields{"message"} = "text";
+    $fields{"text"} = "text";
  
     $body = "Here is what was sent:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
  
