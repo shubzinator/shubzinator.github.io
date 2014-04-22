@@ -436,7 +436,6 @@ section{
     height: 100%;
 }
 
-
 /* Contact Styles */
 
 #contact-left ul{
@@ -474,6 +473,10 @@ section{
 }
 
 .map-container{
+	display: none;
+}
+
+.dotted-map{
 	display: none;
 }
 
