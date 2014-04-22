@@ -520,6 +520,18 @@
   	  </div>  
   	
   	</div>--><!-- end Project 1 --> 
+    <div class="full-width" style="background-color: transparent"><script>                        
+                 var lat="40.77531";                      
+                 var lng="-73.97477";
+                 var marker_lat="40.77531";
+                 var marker_lng="-73.97477";
+                 var zoom="14";
+                 var message="We are here";
+                 jQuery(document).ready(function() {
+                    initializeGoogleMap();
+                });
+            </script>
+            <div class="map" id="map" style="width: 100%; height: 480px; z-index: 0;"></div></div>
   </div><!-- end of Main Container -->
   
 
@@ -531,6 +543,7 @@
   <script src="javascripts/app.js"></script>
   <script src="javascripts/scripts.js"></script>
   <script src="javascripts/jquery.tooltipster.js"></script>
+  <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&#038;ver=3.8.3'></script>
     <script>
     $(window).load(function(){
       $("#featured").orbit({
