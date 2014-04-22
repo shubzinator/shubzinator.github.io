@@ -423,6 +423,20 @@ section{
 	
 }
 
+/* Map Styles */
+
+.map-container {
+	width: none;
+	height: 300px;
+}
+
+#map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
 /* Contact Styles */
 
 #contact-left ul{
